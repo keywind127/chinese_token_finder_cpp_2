@@ -80,15 +80,15 @@ class ChineseTokenFinder:
         self.thresh_occ = thresh_occ 
         return self.__update_thresh()
 
-    def set_thresh_pmi(self, thresh_pmi : int) -> "ChineseTokenFinder":
+    def set_thresh_pmi(self, thresh_pmi : float) -> "ChineseTokenFinder":
         self.thresh_pmi = thresh_pmi 
         return self.__update_thresh()
 
-    def set_thresh_enl(self, thresh_enl : int) -> "ChineseTokenFinder":
+    def set_thresh_enl(self, thresh_enl : float) -> "ChineseTokenFinder":
         self.thresh_enl = thresh_enl 
         return self.__update_thresh()
     
-    def set_thresh_enr(self, thresh_enr : int) -> "ChineseTokenFinder":
+    def set_thresh_enr(self, thresh_enr : float) -> "ChineseTokenFinder":
         self.thresh_enr = thresh_enr 
         return self.__update_thresh()
 
@@ -152,4 +152,4 @@ if (__name__ == "__main__"):
 
         result = tokenizer.extract_token_scores()
 
-        pprint.pprint(result)
+        #pprint.pprint(result)
